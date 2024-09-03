@@ -5,9 +5,9 @@ using TMPro;
 
 public class puntos : MonoBehaviour
 {
+	public static puntos instancia;
 	public TextMeshPro texto;
 	int puntaje = 0;
-	public static puntos instancia;
 
 	public void Awake(){
 		instancia = this;

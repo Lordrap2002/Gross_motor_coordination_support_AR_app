@@ -356,9 +356,9 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -366,30 +366,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\Santi\Jave\Tesis\Proyecto
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 367d0000
-    m_LastClickedID: 32054
-    m_ExpandedIDs: 00000000107d0000127d0000147d0000167d0000187d00001a7d00001c7d00001e7d0000207d00002c7d0000
+    m_SelectedIDs: 867c0000
+    m_LastClickedID: 31878
+    m_ExpandedIDs: 00000000747c0000767c0000787c00007a7c00007c7c00007e7c0000807c0000827c0000847c0000867c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prefabs
-      m_OriginalName: Prefabs
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 32050
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -403,7 +403,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000107d0000127d0000147d0000167d0000187d00001a7d00001c7d00001e7d0000207d0000
+    m_ExpandedIDs: 00000000747c0000767c0000787c00007a7c00007c7c00007e7c0000807c0000827c0000847c0000867c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -431,7 +431,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000000000007c9d0000
+    m_ExpandedInstanceIDs: c62300007c9d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -545,7 +545,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: dab4fdff2ab5fdffdcbdfdffe6c1fdfff6c5fdffe0cafdff2e12feff3212feff3612feff3c12feff4012fefff080feff0885feff1a85feff4c90feff109affffb09cffffbc9cffffc29cffff929effffa69effff92b4ffffbec6ffff14cbffff08d0ffff46d6ffff3adbffff26fbffff
+      m_ExpandedIDs: 506dffffa06dffff5c76ffff6c7affff827effff7e83ffff6ae9ffff70e9ffff72e9ffff74e9ffff26fbffff90720000947200009a720000ca720000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -925,9 +925,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.0030968413, y: 1.6625373, z: 0.2068786}
+    m_Target: {x: 0.0057627913, y: 1.641426, z: 0.2060277}
     speed: 2
-    m_Value: {x: -0.0030968413, y: 1.6625373, z: 0.2068786}
+    m_Value: {x: 0.0057627913, y: 1.641426, z: 0.2060277}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -973,13 +973,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.019175598, y: 0.036583353, z: 0.00070318236, w: -0.9991527}
+    m_Target: {x: -0.07374386, y: -0.002395481, z: 0.0001774886, w: -0.9972813}
     speed: 2
-    m_Value: {x: 0.019175477, y: 0.036583122, z: 0.00070317794, w: -0.9991464}
+    m_Value: {x: -0.07374335, y: -0.0023954646, z: 0.00017748738, w: -0.9972744}
   m_Size:
-    m_Target: 0.056916934
+    m_Target: 0.14336146
     speed: 2
-    m_Value: 0.056916934
+    m_Value: 0.14336146
   m_Ortho:
     m_Target: 0
     speed: 2
