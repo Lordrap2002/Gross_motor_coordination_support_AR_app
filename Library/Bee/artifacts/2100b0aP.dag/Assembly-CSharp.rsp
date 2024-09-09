@@ -440,6 +440,7 @@
 "Assets/Scripts/comportamientoFruta.cs"
 "Assets/Scripts/juego.cs"
 "Assets/Scripts/mensajeEmergente.cs"
+"Assets/Scripts/positionController.cs"
 "Assets/Scripts/puntos.cs"
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/temporizador.cs"
