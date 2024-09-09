@@ -7,7 +7,8 @@ public class Temporizador : MonoBehaviour
 {
 	public static Temporizador instancia;
 	public TextMeshPro texto;
-	public int tiempo = 30;
+	public int tiempoMax = 30;
+	public int tiempo;
 
 	public void Awake(){
 		instancia = this;
@@ -15,13 +16,18 @@ public class Temporizador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		tiempo = tiempoMax;
         texto.text = "Tiempo: " + tiempo.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
+    }
+
+	public void reiniciar(){
+        tiempo = tiempoMax;
     }
 
 	public void restarSegundo(){

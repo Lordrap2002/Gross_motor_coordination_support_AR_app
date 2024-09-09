@@ -24,6 +24,6 @@ public class ComportamientoFruta : MonoBehaviour
 
 	public void tocar(){
 		Destroy(this.gameObject);
-		puntos.instancia.sumar();
+		Puntos.instancia.sumar();
 	}
 }

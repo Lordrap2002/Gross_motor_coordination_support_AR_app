@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class puntos : MonoBehaviour
+public class Puntos : MonoBehaviour
 {
-	public static puntos instancia;
+	public static Puntos instancia;
 	public TextMeshPro texto;
 	int puntaje = 0;
 
@@ -23,6 +23,11 @@ public class puntos : MonoBehaviour
     {
         
     }
+
+	public void reiniciar(){
+		puntaje = 0;
+		texto.text = "Puntaje: " + puntaje.ToString();
+	}
 
 	public void sumar(){
 		puntaje += 1;
