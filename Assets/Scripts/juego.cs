@@ -39,7 +39,7 @@ public class Juego : MonoBehaviour
 			yield return new WaitForSeconds(1);
 			Temporizador.instancia.restarSegundo();
 			if((i % 3) == 0){
-				Vector3 pos = new Vector3(Random.Range(-0.4f, 0.4f), 0.4f, Random.Range(0.5f, 1.0f)) + camara.position;
+				Vector3 pos = new Vector3(Random.Range(-0.2f, 0.2f), 0.2f, Random.Range(0.4f, 0.6f)) + camara.position;
 				Instantiate(frutas[Random.Range(0,3)], pos, Quaternion.identity);
 			}
 		}
