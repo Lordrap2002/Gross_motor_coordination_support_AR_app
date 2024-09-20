@@ -14,7 +14,7 @@ public class ComportamientoFruta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fruta.transform.Rotate(Vector3.down, 0.2f);
+        fruta.transform.Rotate(Vector3.down, 0.5f);
     }
 	private void OnCollisionEnter(Collision collision){
 		if(collision.gameObject.tag == "piso"){
