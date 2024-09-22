@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static Microsoft.MixedReality.GraphicsTools.MeshInstancer;
 
 public class ComportamientoAnimal : MonoBehaviour{
 	public Transform camara;
