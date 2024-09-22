@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Santi\\Jave\\Tesis\\Proyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\comportamientofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\comportamientofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|C:\\Santi\\Jave\\Tesis\\Proyecto\\assets\\scripts\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|C:\\Santi\\Jave\\Tesis\\Proyecto\\assets\\scripts\\positioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\positioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|C:\\Santi\\Jave\\Tesis\\Proyecto\\assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\juegofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "positionController.cs",
-              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\positionController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\positionController.cs",
-              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\positionController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\positionController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAARAAAA",
+              "DocumentIndex": 1,
+              "Title": "juegoFruta.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoFruta.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\juegoFruta.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoFruta.cs",
+              "RelativeToolTip": "Assets\\Scripts\\juegoFruta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T21:00:43.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "temporizador.cs",
-              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\temporizador.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\temporizador.cs",
-              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\temporizador.cs",
-              "RelativeToolTip": "Assets\\Scripts\\temporizador.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T20:28:33.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "comportamientoFruta.cs",
-              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\comportamientoFruta.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\comportamientoFruta.cs",
-              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\comportamientoFruta.cs",
-              "RelativeToolTip": "Assets\\Scripts\\comportamientoFruta.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBAAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T19:05:15.962Z",
+              "WhenOpened": "2024-09-20T16:57:06.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "juego.cs",
-              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juego.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\juego.cs",
-              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juego.cs",
-              "RelativeToolTip": "Assets\\Scripts\\juego.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCkAAAAwAAAA",
+              "DocumentIndex": 0,
+              "Title": "juegoLinea.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoLinea.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\juegoLinea.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoLinea.cs",
+              "RelativeToolTip": "Assets\\Scripts\\juegoLinea.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAA9wCEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T15:50:54.438Z",
+              "WhenOpened": "2024-09-20T16:56:54.567Z",
               "EditorCaption": ""
             }
           ]

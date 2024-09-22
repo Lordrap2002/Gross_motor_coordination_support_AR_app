@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1366
     height: 680
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 41
+  controlID: 96
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -358,7 +358,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -366,15 +366,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\Santi\Jave\Tesis\Proyecto
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 0c7d0000
-    m_LastClickedID: 32012
+    m_SelectedIDs: 0a7d0000
+    m_LastClickedID: 32010
     m_ExpandedIDs: 00000000ec7c0000ee7c0000f07c0000f27c0000f47c0000f67c0000f87c0000fa7c0000fc7c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300007c9d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c2720000
-      m_LastClickedID: 29378
-      m_ExpandedIDs: 26fbffff8c720000
+      m_SelectedIDs: c4920000
+      m_LastClickedID: 37572
+      m_ExpandedIDs: 6284ffff748affffe093ffffb498ffffcaa2ffffdca7ffff7aaeffffb6b2ffffc8b2ffff72b3ffffe6b9ffff2cbfffffa6c9ffffc0ceffff0ad8ffffdcddffffdeddffffd6e2ffff5ce8ffffb6ecffff22f1ffff9ef5ffff26fbffffc68a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
