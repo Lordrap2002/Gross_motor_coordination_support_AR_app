@@ -28,10 +28,7 @@ public class JuegoFruta : MonoBehaviour{
 		yield return new WaitForSeconds(3);
 		MensajeEmergente.instancia.cambiarTexto("");
 		int tiempoMax = Temporizador.instancia.tiempoMax;
-		GameObject[] frutas = new GameObject[3];
-		frutas[0] = fruta1;
-		frutas[1] = fruta2;
-		frutas[2] = fruta3;
+		GameObject[] frutas = {fruta1, fruta2, fruta3};
 		for(int i = 0; i < tiempoMax; i++){
 			yield return new WaitForSeconds(1);
 			Temporizador.instancia.restarSegundo();

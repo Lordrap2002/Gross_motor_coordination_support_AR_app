@@ -10,6 +10,11 @@ public class JuegoLinea : MonoBehaviour{
 	public TextMeshPro mensaje;
 	public Transform camara;
 	private float[] posx = {0.6f, 2.0f, -0.6f, -2.0f}, posz = {2.5f, 2.0f, 2.5f, 2.0f};
+	private AudioSource sonido;
+
+	public void Awake(){
+		sonido = GetComponent<AudioSource>();
+	}
 
     void Start(){
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
@@ -24,20 +29,19 @@ public class JuegoLinea : MonoBehaviour{
 
 	IEnumerator Juego2(){
 		int i, j, id, cont;
-		float desvio;
-		bool siguiente, lineaRecta;
+		bool siguiente;
+		Vector3 xx, zz;
 		Vector3[] posiciones = new Vector3[4];
-		Vector3 xx, zz, zona, direccionI, direccionA;
 		GameObject[] animalesI = {animal1, animal2, animal3, animal4},
 					 animales = new GameObject[4];
 		interfazMenu.SetActive(false); interfazJuego.SetActive(true);
 		MensajeEmergente.instancia.cambiarTexto("Camina hacia el animal que haga sonido!");
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(5);
 		MensajeEmergente.instancia.cambiarTexto("");
 		//int tiempoMax = Temporizador.instancia.tiempoMax;
 		for(i = 0; i < 4; i++){
-			cont = 0; siguiente = true; lineaRecta = true;
-			yield return new WaitForSeconds(1);
+			cont = 0; siguiente = true;
+			id = UnityEngine.Random.Range(0, 4);
 			MensajeEmergente.instancia.cambiarTexto("");
 			//Temporizador.instancia.restarSegundo();
 			xx = camara.right; zz = camara.forward;
@@ -47,35 +51,30 @@ public class JuegoLinea : MonoBehaviour{
 				posiciones[j][1] = 0.0f;
 				animales[j] = Instantiate(animalesI[j], posiciones[j], Quaternion.Euler(0, camara.transform.eulerAngles.y, 0));
 			}
-			id = UnityEngine.Random.Range(0,4);
-			zona = posiciones[id] + ((camara.position - posiciones[id]).normalized * 0.75f);
-			direccionI = posiciones[id] - camara.position;
-			direccionI[1] = 0.0f;
+			animales[id].GetComponent<ComportamientoAnimal>().activarTurno();
 			while(siguiente){
 				if(cont % 15 == 0){
 					animales[id].GetComponent<ComportamientoAnimal>().emitirSonido();
 				}
-				direccionA = posiciones[id] - camara.position;
-				direccionA[1] = 0.0f;
-				desvio = Vector3.Dot(direccionI.normalized, direccionA.normalized);
-				if(desvio < 0.99){
-					lineaRecta = false;
-					Debug.Log("El usuario se ha desviado de la línea recta.");
-				}
-				if(camara.position[0] <= (zona[0] + 0.2f) && camara.position[0] >= (zona[0] - 0.2f)
-				&& camara.position[2] <= (zona[2] + 0.2f) && camara.position[2] >= (zona[2] - 0.2f)){
-					Destroy(animales[id]);
-					siguiente = false;
-					MensajeEmergente.instancia.cambiarTexto(lineaRecta ? "Muy bien!" : "Oh no");
-				}
 				yield return new WaitForSeconds(1);
+				MensajeEmergente.instancia.cambiarTexto("");
+				for(j = 0; j < 4; j++){
+					if(animales[j].GetComponent<ComportamientoAnimal>().cerca){
+						if(animales[j].GetComponent<ComportamientoAnimal>().turno){
+							siguiente = false;
+							MensajeEmergente.instancia.cambiarTexto(animales[j].GetComponent<ComportamientoAnimal>().lineaRecta ? "Muy bien!" : "Oh no");
+							sonido.Play();
+						}else{
+							MensajeEmergente.instancia.cambiarTexto("Ese no es :(");
+						}
+					}
+				}
 				cont++;
 			}
 			for(j = 0; j < 4; j++){
-				if(j != id){
-					Destroy(animales[j]);
-				}
+				Destroy(animales[j]);
 			}
+			yield return new WaitForSeconds(3);
 		}
 		yield return new WaitForSeconds(1);
 		MensajeEmergente.instancia.cambiarTexto("Se acabó el juego!");
