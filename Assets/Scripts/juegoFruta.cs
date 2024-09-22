@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class JuegoFruta : MonoBehaviour
-{
+public class JuegoFruta : MonoBehaviour{
 	bool activo = false;
 	public GameObject fruta1, fruta2, fruta3, interfazMenu, interfazJuego;
 	public TextMeshPro mensaje;
 	public Transform camara;
 
-    // Start is called before the first frame update
     void Start(){
 		interfazMenu.SetActive(true);
 		interfazJuego.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update(){
 		if(activo){
-			activo = false;
+			Activar();
 			StartCoroutine(Juego3());
 		}
     }
@@ -39,6 +36,7 @@ public class JuegoFruta : MonoBehaviour
 			yield return new WaitForSeconds(1);
 			Temporizador.instancia.restarSegundo();
 			if((i % 3) == 0){
+				MensajeEmergente.instancia.cambiarTexto("");
 				Vector3 pos = new Vector3(Random.Range(-0.15f, 0.15f), 0.2f, Random.Range(0.5f, 0.7f)) + camara.position;
 				Instantiate(frutas[Random.Range(0,3)], pos, Quaternion.identity);
 			}
@@ -52,7 +50,7 @@ public class JuegoFruta : MonoBehaviour
 		interfazJuego.SetActive(false);
 	}
 
-	public void activar(){
+	public void Activar(){
 		if(activo){
 			activo = false;
 		}else{

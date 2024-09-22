@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\juegofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|C:\\Santi\\Jave\\Tesis\\Proyecto\\assets\\scripts\\comportamientoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\comportamientoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "juegoFruta.cs",
-              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoFruta.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\juegoFruta.cs",
-              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoFruta.cs",
-              "RelativeToolTip": "Assets\\Scripts\\juegoFruta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
+              "Title": "comportamientoAnimal.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\comportamientoAnimal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\comportamientoAnimal.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\comportamientoAnimal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\comportamientoAnimal.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwA4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T16:57:06.751Z",
+              "WhenOpened": "2024-09-20T19:49:34.883Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\juegoLinea.cs",
               "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoLinea.cs",
               "RelativeToolTip": "Assets\\Scripts\\juegoLinea.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAA9wCEAAAAqAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwDUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T16:56:54.567Z",
               "EditorCaption": ""

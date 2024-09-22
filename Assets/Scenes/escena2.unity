@@ -541,18 +541,18 @@ PrefabInstance:
     - target: {fileID: 7148864741470665240, guid: bbd5a15187c392a4da0db337a2488bd7, type: 3}
       propertyPath: <OnClicked>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1909199563}
     - target: {fileID: 7148864741470665240, guid: bbd5a15187c392a4da0db337a2488bd7, type: 3}
       propertyPath: <OnClicked>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7148864741470665240, guid: bbd5a15187c392a4da0db337a2488bd7, type: 3}
       propertyPath: <OnClicked>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: activar
+      value: Activar
       objectReference: {fileID: 0}
     - target: {fileID: 7148864741470665240, guid: bbd5a15187c392a4da0db337a2488bd7, type: 3}
       propertyPath: <OnClicked>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: juego, Assembly-CSharp
+      value: JuegoLinea, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7148864741470665240, guid: bbd5a15187c392a4da0db337a2488bd7, type: 3}
       propertyPath: <OnClicked>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -978,13 +978,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8d7aedb2148514e955f2c6a703e023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruta1: {fileID: 0}
-  fruta2: {fileID: 0}
-  fruta3: {fileID: 0}
-  interfazMenu: {fileID: 0}
-  interfazJuego: {fileID: 0}
-  mensaje: {fileID: 0}
-  camara: {fileID: 0}
+  animal1: {fileID: 6138294755002966502, guid: 556b3b092c66bbc429af601949b74932, type: 3}
+  animal2: {fileID: 6138294755002966502, guid: 556b3b092c66bbc429af601949b74932, type: 3}
+  animal3: {fileID: 6138294755002966502, guid: 556b3b092c66bbc429af601949b74932, type: 3}
+  animal4: {fileID: 6138294755002966502, guid: 556b3b092c66bbc429af601949b74932, type: 3}
+  interfazMenu: {fileID: 1445516802}
+  interfazJuego: {fileID: 1266777175}
+  mensaje: {fileID: 1764678723}
+  camara: {fileID: 923856603}
+  siguiente: 1
 --- !u!4 &1909199564
 Transform:
   m_ObjectHideFlags: 0

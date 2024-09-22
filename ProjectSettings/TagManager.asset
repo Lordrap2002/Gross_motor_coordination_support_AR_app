@@ -6,6 +6,7 @@ TagManager:
   tags:
   - fruta
   - piso
+  - animal
   layers:
   - Default
   - TransparentFX

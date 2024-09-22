@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Temporizador : MonoBehaviour
-{
+public class Temporizador : MonoBehaviour{
 	public static Temporizador instancia;
 	public TextMeshPro texto;
 	public int tiempoMax = 30;
@@ -13,16 +12,13 @@ public class Temporizador : MonoBehaviour
 	public void Awake(){
 		instancia = this;
 	}
-    // Start is called before the first frame update
-    void Start()
-    {
+
+    void Start(){
 		tiempo = tiempoMax;
         texto.text = "Tiempo: " + tiempo.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
        
     }
 
