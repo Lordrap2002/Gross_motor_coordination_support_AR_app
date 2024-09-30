@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Santi\\Jave\\Tesis\\Proyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\seguimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\seguimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|C:\\Santi\\Jave\\Tesis\\Proyecto\\assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -18,33 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "seguimiento.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\seguimiento.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\seguimiento.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\seguimiento.cs",
+              "RelativeToolTip": "Assets\\Scripts\\seguimiento.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAqwEoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T23:51:17.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "comportamientoAnimal.cs",
               "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\comportamientoAnimal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\comportamientoAnimal.cs",
               "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\comportamientoAnimal.cs",
               "RelativeToolTip": "Assets\\Scripts\\comportamientoAnimal.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA6wB0AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T19:49:34.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T19:49:34.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "juegoLinea.cs",
               "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoLinea.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\juegoLinea.cs",
               "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoLinea.cs",
               "RelativeToolTip": "Assets\\Scripts\\juegoLinea.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwEEAAAAVAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAIwFYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T16:56:54.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T16:56:54.567Z"
             }
           ]
         }

@@ -16,7 +16,6 @@ public class ComportamientoAnimal : MonoBehaviour{
 
     void Start(){
         camara = Camera.main.transform;
-		zona = transform.position + ((camara.position - transform.position).normalized * 0.75f);
 		direccionI = transform.position - camara.position;
 		direccionI[1] = 0.0f;
     }
@@ -28,10 +27,11 @@ public class ComportamientoAnimal : MonoBehaviour{
 			direccionA = transform.position - camara.position;
 			direccionA[1] = 0.0f;
 			desvio = Vector3.Dot(direccionI.normalized, direccionA.normalized);
-			if(desvio < 0.99){
+			if(desvio < 0.95){
 				lineaRecta = false;
 			}
 		}
+		zona = transform.position + ((camara.position - transform.position).normalized * 1.25f);
 		if(camara.position[0] <= (zona[0] + 0.2f) && camara.position[0] >= (zona[0] - 0.2f)
 		&& camara.position[2] <= (zona[2] + 0.2f) && camara.position[2] >= (zona[2] - 0.2f)){
 			this.cerca = true;
