@@ -4,12 +4,7 @@ using UnityEngine;
 using TMPro;
 
 public class MensajeEmergente : MonoBehaviour{
-	public static MensajeEmergente instancia;
 	public TextMeshPro texto;
-
-	public void Awake(){
-		instancia = this;
-	}
 
     void Start(){
 

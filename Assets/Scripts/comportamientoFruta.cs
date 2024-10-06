@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ComportamientoFruta : MonoBehaviour{
-	public GameObject fruta;
+	public GameObject fruta, interfaz;
+	public TextMeshPro mensaje;
 
     void Start(){
-        
+        interfaz = GameObject.Find("MensajeEmergente");
+		mensaje = interfaz.GetComponent<TextMeshPro>();
     }
 
     void Update(){
@@ -22,6 +25,6 @@ public class ComportamientoFruta : MonoBehaviour{
 	public void tocar(){
 		Destroy(this.gameObject);
 		Puntos.instancia.sumar();
-		MensajeEmergente.instancia.cambiarTexto("Muy bien!");
+		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Muy bien!");
 	}
 }

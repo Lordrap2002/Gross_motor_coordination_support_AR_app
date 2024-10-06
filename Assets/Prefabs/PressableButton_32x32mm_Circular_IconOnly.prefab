@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 6939551816295558273}
   - component: {fileID: 6235131618998497881}
   - component: {fileID: 1082358001721682203}
+  - component: {fileID: 515549751839174913}
   m_Layer: 0
   m_Name: PressableButton_32x32mm_Circular_IconOnly
   m_TagString: Untagged
@@ -376,8 +377,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0497, y: 1.6, z: 0.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6144304463322884889}
   - {fileID: 639120950470856160}
@@ -973,6 +974,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seeItSayItLabel: {fileID: 8718773768449872391}
   positionControl: {fileID: 0}
+--- !u!114 &515549751839174913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721454024640189250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c805e9db2b9edf4abb418c9b0648eeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1729306942693670015
 GameObject:
   m_ObjectHideFlags: 0

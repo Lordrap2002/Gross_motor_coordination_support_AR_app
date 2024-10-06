@@ -1,14 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System;
-using static UnityEngine.EventSystems.EventTrigger;
+using MixedReality.Toolkit.UX;
 
 public class JuegoLinea : MonoBehaviour{
-	public bool activo = false;
-	public GameObject animal1, animal2, animal3, animal4, interfazMenu, interfazJuego, flecha, centro;
-	public TextMeshPro mensaje;
+	public bool activo = false, fin = true;
+	public GameObject animal1, animal2, animal3, animal4, interfazMenu, interfazJuego, flecha, centro,
+					  boton;
+	public TextMeshPro mensaje, historia;
 	public Transform camara;
 	private float[] posx = {0.6f, 2.0f, -0.6f, -2.0f}, posz = {2.5f, 2.0f, 2.5f, 2.0f};
 	private AudioSource sonido;
@@ -19,12 +18,21 @@ public class JuegoLinea : MonoBehaviour{
 
     void Start(){
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
+		historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el botón grande para iniciar");
     }
 
     void Update(){
-		if(activo){
+		PressableButton boton1;
+		if(activo && fin){
 			Activar();
+			fin = false;
+			Activar();
+			historia.GetComponent<MensajeEmergente>().cambiarTexto("");
 			StartCoroutine(Juego2());
+			historia.GetComponent<MensajeEmergente>().cambiarTexto("Parece que el mono tiene hambre, vamos a alimentarlo!");
+			boton1 = boton.GetComponent<PressableButton>();
+			boton1.OnClicked.RemoveAllListeners();
+			boton1.OnClicked.AddListener(() => boton1.GetComponent<SceneLoader>().LoadScene("escena1"));
 		}
     }
 
@@ -38,13 +46,13 @@ public class JuegoLinea : MonoBehaviour{
 					 animales = new GameObject[4];
 		centro.transform.position = camara.position;
 		interfazMenu.SetActive(false); interfazJuego.SetActive(true);
-		MensajeEmergente.instancia.cambiarTexto("Camina hacia el animal que haga sonido!");
+		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Camina hacia el animal que haga sonido!");
 		yield return new WaitForSeconds(5);
-		MensajeEmergente.instancia.cambiarTexto("");
+		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("");
 		for(i = 0; i < 4; i++){
 			cont = 0; siguiente = true; dif = 0;
 			id = UnityEngine.Random.Range(0, 4);
-			MensajeEmergente.instancia.cambiarTexto("");
+			mensaje.GetComponent<MensajeEmergente>().cambiarTexto("");
 			xx = camara.right; zz = camara.forward;
 			xx[1] = 0.0f; zz[1] = 0.0f;
 			for(j = 0; j < 4; j++){
@@ -58,15 +66,15 @@ public class JuegoLinea : MonoBehaviour{
 					animales[id].GetComponent<ComportamientoAnimal>().emitirSonido();
 				}
 				yield return new WaitForSeconds(1);
-				MensajeEmergente.instancia.cambiarTexto("");
+				mensaje.GetComponent<MensajeEmergente>().cambiarTexto("");
 				for(j = 0; j < 4; j++){
 					if(animales[j].GetComponent<ComportamientoAnimal>().cerca){
 						if(animales[j].GetComponent<ComportamientoAnimal>().turno){
 							siguiente = false;
-							MensajeEmergente.instancia.cambiarTexto(animales[j].GetComponent<ComportamientoAnimal>().lineaRecta ? "Muy bien!" : "Oh no");
+							mensaje.GetComponent<MensajeEmergente>().cambiarTexto(animales[j].GetComponent<ComportamientoAnimal>().lineaRecta ? "Muy bien!" : "Oh no");
 							sonido.Play();
 						}else{
-							MensajeEmergente.instancia.cambiarTexto("Ese no es :(");
+							mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Ese no es :(");
 						}
 					}
 				}
@@ -76,7 +84,7 @@ public class JuegoLinea : MonoBehaviour{
 				Destroy(animales[j]);
 			}
 			yield return new WaitForSeconds(3);
-			MensajeEmergente.instancia.cambiarTexto("Mira a un lado");
+			mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Mira a un lado");
 			flecha.SetActive(true);
 			while(dif < 0.90){
 				dirC = (centro.transform.position - camara.position).normalized;
@@ -89,7 +97,7 @@ public class JuegoLinea : MonoBehaviour{
 			flecha.SetActive(false);
 		}
 		yield return new WaitForSeconds(1);
-		MensajeEmergente.instancia.cambiarTexto("Se acabó el juego!");
+		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Se acabó el juego!");
 		yield return new WaitForSeconds(3);
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
 	}

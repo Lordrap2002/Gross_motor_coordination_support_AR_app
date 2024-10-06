@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Santi\\Jave\\Tesis\\Proyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\seguimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\seguimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\juegoimitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegoimitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|C:\\Santi\\Jave\\Tesis\\Proyecto\\assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|C:\\Santi\\Jave\\Tesis\\Proyecto\\assets\\scripts\\comportamientoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\comportamientoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\juegofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\mensajeemergente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mensajeemergente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "seguimiento.cs",
-              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\seguimiento.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\seguimiento.cs",
-              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\seguimiento.cs",
-              "RelativeToolTip": "Assets\\Scripts\\seguimiento.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAqwEoAAAARAAAA",
+              "DocumentIndex": 4,
+              "Title": "SceneLoader.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\SceneLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneLoader.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\SceneLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneLoader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T23:51:17.033Z",
+              "WhenOpened": "2024-10-06T15:56:57.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "comportamientoAnimal.cs",
-              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\comportamientoAnimal.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\comportamientoAnimal.cs",
-              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\comportamientoAnimal.cs",
-              "RelativeToolTip": "Assets\\Scripts\\comportamientoAnimal.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA6wB0AAAATAAAA",
+              "DocumentIndex": 3,
+              "Title": "mensajeEmergente.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\mensajeEmergente.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\mensajeEmergente.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\mensajeEmergente.cs",
+              "RelativeToolTip": "Assets\\Scripts\\mensajeEmergente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T19:49:34.883Z"
+              "WhenOpened": "2024-10-06T15:25:00.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "juegoImitar.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoImitar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\juegoImitar.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoImitar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\juegoImitar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T14:15:45.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -57,9 +79,23 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\juegoLinea.cs",
               "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoLinea.cs",
               "RelativeToolTip": "Assets\\Scripts\\juegoLinea.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAIwFYAAAAoAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T16:56:54.567Z"
+              "WhenOpened": "2024-09-20T16:56:54.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "juegoFruta.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoFruta.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\juegoFruta.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoFruta.cs",
+              "RelativeToolTip": "Assets\\Scripts\\juegoFruta.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T14:57:04.583Z",
+              "EditorCaption": ""
             }
           ]
         }
