@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using MixedReality.Toolkit.UX;
+using Unity.VisualScripting;
 
 public class JuegoFruta : MonoBehaviour{
 	bool activo = false, fin = true;
@@ -22,10 +23,10 @@ public class JuegoFruta : MonoBehaviour{
 			Activar();
 			historia.GetComponent<MensajeEmergente>().cambiarTexto("");
 			StartCoroutine(Juego3());
-			historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el boton para reiniciar el juego");
+			historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el boton para salir");
 			boton1 = boton.GetComponent<PressableButton>();
 			boton1.OnClicked.RemoveAllListeners();
-			boton1.OnClicked.AddListener(() => boton1.GetComponent<SceneLoader>().LoadScene("escena0"));
+			boton1.OnClicked.AddListener(() => boton1.GetComponent<Salir>().CerrarJuego());
 		}
     }
 
@@ -42,7 +43,7 @@ public class JuegoFruta : MonoBehaviour{
 			Temporizador.instancia.restarSegundo();
 			if((i % 3) == 0){
 				mensaje.GetComponent<MensajeEmergente>().cambiarTexto("");
-				Vector3 pos = new Vector3(Random.Range(-0.15f, 0.15f), 0.2f, Random.Range(0.5f, 0.7f)) + camara.position;
+				Vector3 pos = new Vector3(Random.Range(-0.2f, 0.2f), 0.2f, 0.0f) + camara.position + (new Vector3(camara.forward.x, 0, camara.forward.z).normalized * Random.Range(0.5f, 0.8f));
 				Instantiate(frutas[Random.Range(0,3)], pos, Quaternion.identity);
 			}
 		}

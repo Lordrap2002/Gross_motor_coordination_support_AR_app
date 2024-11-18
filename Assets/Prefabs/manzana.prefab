@@ -396,6 +396,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruta: {fileID: 3157655821844624482}
+  interfaz: {fileID: 0}
+  mensaje: {fileID: 0}
 --- !u!65 &5794572445281454010
 BoxCollider:
   m_ObjectHideFlags: 0

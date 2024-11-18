@@ -72,7 +72,9 @@ public class JuegoLinea : MonoBehaviour{
 						if(animales[j].GetComponent<ComportamientoAnimal>().turno){
 							siguiente = false;
 							mensaje.GetComponent<MensajeEmergente>().cambiarTexto(animales[j].GetComponent<ComportamientoAnimal>().lineaRecta ? "Muy bien!" : "Oh no");
-							sonido.Play();
+							if(animales[j].GetComponent<ComportamientoAnimal>().lineaRecta){
+								sonido.Play();
+							}
 						}else{
 							mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Ese no es :(");
 						}
@@ -88,9 +90,11 @@ public class JuegoLinea : MonoBehaviour{
 			flecha.SetActive(true);
 			while(dif < 0.90){
 				dirC = (centro.transform.position - camara.position).normalized;
-				dirC[1] = 0;
 				dirA = camara.forward.normalized;
+				dirC[1] = 0;
 				dirA[1] = 0;
+				dirC.Normalize();
+				dirA.Normalize();
 				dif = Vector3.Dot(dirA, dirC);
 				yield return new WaitForSeconds(0.1f);
 			}
