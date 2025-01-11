@@ -3,6 +3,11 @@ using UnityEngine;
 using TMPro;
 using MixedReality.Toolkit.UX;
 
+/**
+ * Clase que maneja el juego de la línea recta.
+ * Esta clase se encarga de activar y desactivar el juego, mostrar mensajes emergentes,
+ * iniciar el juego en sí, y manejar el fin del juego.
+ */
 public class JuegoLinea : MonoBehaviour{
 	public bool activo = false, fin = true;
 	public GameObject animal1, animal2, animal3, animal4, interfazMenu, interfazJuego, flecha, centro,
@@ -12,15 +17,24 @@ public class JuegoLinea : MonoBehaviour{
 	private float[] posx = {0.6f, 2.0f, -0.6f, -2.0f}, posz = {2.5f, 2.0f, 2.5f, 2.0f};
 	private AudioSource sonido;
 
+	/**
+	 * Inicializa el sonido del juego.
+	 */
 	public void Awake(){
 		sonido = GetComponent<AudioSource>();
 	}
 
+    /**
+     * Inicializa la interfaz del menú y el mensaje de historia.
+     */
     void Start(){
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
-		historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el bot�n grande para iniciar");
+		historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el bot�n grande para iniciar");
     }
 
+    /**
+     * Actualiza el estado del juego y maneja los eventos de inicio y fin.
+     */
     void Update(){
 		PressableButton boton1;
 		if(activo && fin){
@@ -36,6 +50,9 @@ public class JuegoLinea : MonoBehaviour{
 		}
     }
 
+	/**
+	 * Corrutina que maneja el juego de la línea recta.
+	 */
 	IEnumerator Juego2(){
 		int i, j, id, cont;
 		bool siguiente;
@@ -101,11 +118,14 @@ public class JuegoLinea : MonoBehaviour{
 			flecha.SetActive(false);
 		}
 		yield return new WaitForSeconds(1);
-		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Se acab� el juego!");
+		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Se acab� el juego!");
 		yield return new WaitForSeconds(3);
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
 	}
 
+	/**
+	 * Activa o desactiva el juego.
+	 */
 	public void Activar(){
 		activo = !activo;
 	}

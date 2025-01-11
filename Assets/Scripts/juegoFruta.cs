@@ -4,17 +4,28 @@ using TMPro;
 using MixedReality.Toolkit.UX;
 using Unity.VisualScripting;
 
+/**
+ * Clase que maneja el juego de atrapar frutas.
+ * Esta clase se encarga de activar y desactivar el juego, mostrar mensajes emergentes,
+ * iniciar el temporizador y el juego en sí, y manejar el fin del juego.
+ */
 public class JuegoFruta : MonoBehaviour{
 	bool activo = false, fin = true;
 	public GameObject fruta1, fruta2, fruta3, interfazMenu, interfazJuego, boton;
 	public TextMeshPro mensaje, historia;
 	public Transform camara;
 
+    /**
+     * Inicializa la interfaz del menú y el mensaje de historia.
+     */
     void Start(){
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
-		historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el bot�n grande para iniciar");
+		historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el botón grande para iniciar");
     }
 
+    /**
+     * Actualiza el estado del juego y maneja los eventos de inicio y fin.
+     */
     void Update(){
 		PressableButton boton1;
 		if(activo && fin){
@@ -30,7 +41,10 @@ public class JuegoFruta : MonoBehaviour{
 		}
     }
 
-	IEnumerator Juego3(){
+    /**
+     * Corrutina que maneja el juego de atrapar frutas.
+     */
+    IEnumerator Juego3(){
 		interfazMenu.SetActive(false);
 		interfazJuego.SetActive(true);
 		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Atrapa las frutas antes de que se acabe el tiempo!");
@@ -48,14 +62,17 @@ public class JuegoFruta : MonoBehaviour{
 			}
 		}
 		yield return new WaitForSeconds(1);
-		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Se acab� el tiempo!");
+		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Se acabó el tiempo!");
 		yield return new WaitForSeconds(3);
 		Temporizador.instancia.reiniciar();
 		Puntos.instancia.reiniciar();
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
 	}
 
-	public void Activar(){
+    /**
+     * Cambia el estado del juego entre activo y no activo.
+     */
+    public void Activar(){
 		if(activo){
 			activo = false;
 		}else{

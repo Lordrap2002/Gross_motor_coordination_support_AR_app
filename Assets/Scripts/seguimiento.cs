@@ -3,6 +3,11 @@ using Unity.Profiling;
 using UnityEngine;
 
 namespace MixedReality.Toolkit.SpatialManipulation{
+    /**
+     * Clase que representa un indicador direccional para la manipulación espacial.
+     * Esta clase se encarga de mostrar un indicador visual para guiar al usuario hacia un objetivo
+     * cuando este no está en la vista del usuario.
+     */
     [AddComponentMenu("MRTK/Spatial Manipulation/Solvers/Directional Indicator")]
     public class DirectionalIndicator : Solver{
         [Tooltip("The GameObject transform to point the indicator towards when this object is not in view.\nThe frame of reference for viewing is defined by the Solver Handler Tracked Target Type")]
