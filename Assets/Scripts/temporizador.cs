@@ -10,8 +10,7 @@ using TMPro;
 public class Temporizador : MonoBehaviour{
 	public static Temporizador instancia;
 	public TextMeshPro texto;
-	public int tiempoMax = 30;
-	public int tiempo;
+	public int tiempoMax = 30, tiempoAct;
 
 	/**
 	 * Inicializa la instancia estática de la clase.
@@ -24,8 +23,8 @@ public class Temporizador : MonoBehaviour{
      * Inicializa el tiempo restante y muestra el tiempo máximo al inicio del juego.
      */
     void Start(){
-		tiempo = tiempoMax;
-        texto.text = "Tiempo: " + tiempo.ToString();
+		tiempoAct = tiempoMax;
+        texto.text = "Tiempo: " + tiempoAct.ToString();
     }
 
     void Update(){
@@ -35,15 +34,15 @@ public class Temporizador : MonoBehaviour{
 	/**
 	 * Reinicia el tiempo restante al tiempo máximo.
 	 */
-	public void reiniciar(){
-        tiempo = tiempoMax;
+	public void Reiniciar(){
+        tiempoAct = tiempoMax;
     }
 
 	/**
 	 * Resta un segundo al tiempo restante y actualiza el texto.
 	 */
-	public void restarSegundo(){
-		tiempo -= (tiempo > 0 ? 1 : 0);
-		texto.text = "Tiempo: " + tiempo.ToString();
+	public void RestarSegundo(){
+		tiempoAct -= (tiempoAct > 0 ? 1 : 0);
+		texto.text = "Tiempo: " + tiempoAct.ToString();
 	}
 }

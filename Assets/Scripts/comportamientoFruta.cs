@@ -28,7 +28,7 @@ public class ComportamientoFruta : MonoBehaviour{
     }
 
     /**
-     * Detecta colisiones con el piso y elimina el objeto de la fruta.
+     * Detecta colisiones con el piso y elimina la fruta si lo hace.
      */
     private void OnCollisionEnter(Collision collision){
         if(collision.gameObject.tag == "piso"){
@@ -37,11 +37,11 @@ public class ComportamientoFruta : MonoBehaviour{
     }
 
     /**
-     * Elimina el objeto de la fruta, suma puntos y cambia el texto del mensaje emergente.
+     * Elimina la fruta, suma puntos y cambia el texto del mensaje emergente.
      */
     public void tocar(){
         Destroy(this.gameObject);
-        Puntos.instancia.sumar();
-        mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Muy bien!");
+        SistemaPuntos.instancia.Sumar();
+        mensaje.GetComponent<MensajeEmergente>().CambiarTexto("Muy bien!");
     }
 }

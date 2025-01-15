@@ -7,13 +7,14 @@ using UnityEngine;
  * Esta clase se encarga de posicionar un objeto en relación a una cámara, 
  * permitiendo ajustar la posición en los ejes x, y, z.
  */
-public class positionController : MonoBehaviour{
+public class ControladorPosicion : MonoBehaviour{
 	public Transform camara;
     public float xpos, ypos, zpos;
 
     /**
      * Inicializa la posición del objeto en el espacio.
-     * Establece la posición del objeto basándose en la posición de la cámara y los valores de xpos, ypos, zpos.
+     * Establece la posición del objeto basándose en la posición de la cámara y 
+     * los valores de xpos, ypos, zpos.
      */
     void Start(){
         transform.position = camara.position + (camara.forward * zpos)
@@ -23,7 +24,8 @@ public class positionController : MonoBehaviour{
 
     /**
      * Actualiza la posición del objeto en cada frame.
-     * Continúa ajustando la posición del objeto basándose en la posición de la cámara y los valores de xpos, ypos, zpos.
+     * Continúa ajustando la posición del objeto basándose en la posición de la 
+     * cámara y los valores de xpos, ypos, zpos.
      */
     void Update(){
         transform.position = camara.position + (camara.forward * zpos)

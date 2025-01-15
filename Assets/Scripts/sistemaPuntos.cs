@@ -7,8 +7,8 @@ using TMPro;
  * Clase que maneja el sistema de puntos del juego.
  * Esta clase se encarga de mostrar el puntaje actual, reiniciar el puntaje y sumar puntos.
  */
-public class Puntos : MonoBehaviour{
-	public static Puntos instancia;
+public class SistemaPuntos : MonoBehaviour{
+	public static SistemaPuntos instancia;
 	public TextMeshPro texto;
 	public int puntaje = 0;
 	private AudioSource sonido;
@@ -35,7 +35,7 @@ public class Puntos : MonoBehaviour{
     /**
      * Reinicia el puntaje a cero y actualiza el texto.
      */
-    public void reiniciar(){
+    public void Reiniciar(){
         puntaje = 0;
         texto.text = "Puntaje: " + puntaje.ToString();
     }
@@ -43,7 +43,7 @@ public class Puntos : MonoBehaviour{
     /**
      * Suma un punto al puntaje actual, actualiza el texto y reproduce un sonido.
      */
-    public void sumar(){
+    public void Sumar(){
         puntaje += 1;
         texto.text = "Puntaje: " + puntaje.ToString();
         sonido.Play();

@@ -20,7 +20,7 @@ public class JuegoFruta : MonoBehaviour{
      */
     void Start(){
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
-		historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el botón grande para iniciar");
+		historia.GetComponent<MensajeEmergente>().CambiarTexto("Presiona el botón grande para iniciar");
     }
 
     /**
@@ -32,12 +32,12 @@ public class JuegoFruta : MonoBehaviour{
 			Activar();
 			fin = false;
 			Activar();
-			historia.GetComponent<MensajeEmergente>().cambiarTexto("");
+			historia.GetComponent<MensajeEmergente>().CambiarTexto("");
 			StartCoroutine(Juego3());
-			historia.GetComponent<MensajeEmergente>().cambiarTexto("Oprime el boton para salir");
+			historia.GetComponent<MensajeEmergente>().CambiarTexto("Muchas gracias por jugar y alimentar al mono!\nPresiona el botón grande para salir");
 			boton1 = boton.GetComponent<PressableButton>();
 			boton1.OnClicked.RemoveAllListeners();
-			boton1.OnClicked.AddListener(() => boton1.GetComponent<Salir>().CerrarJuego());
+			boton1.OnClicked.AddListener(() => boton1.GetComponent<ControladorEscena>().CerrarJuego());
 		}
     }
 
@@ -45,32 +45,34 @@ public class JuegoFruta : MonoBehaviour{
      * Corrutina que maneja el juego de atrapar frutas.
      */
     IEnumerator Juego3(){
-		interfazMenu.SetActive(false);
-		interfazJuego.SetActive(true);
-		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Atrapa las frutas antes de que se acabe el tiempo!");
+		interfazMenu.SetActive(false); interfazJuego.SetActive(true);
+		// Cuenta la historia.
+		mensaje.GetComponent<MensajeEmergente>().CambiarTexto("Vamos a alimentar al mono!\nAgarra las frutas con tus manos!");
 		yield return new WaitForSeconds(3);
-		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("");
+		mensaje.GetComponent<MensajeEmergente>().CambiarTexto("");
 		int tiempoMax = Temporizador.instancia.tiempoMax;
 		GameObject[] frutas = {fruta1, fruta2, fruta3};
+		// Ciclo que genera una fruta aleatoria cada 3 segundos.
 		for(int i = 0; i < tiempoMax; i++){
 			yield return new WaitForSeconds(1);
-			Temporizador.instancia.restarSegundo();
+			Temporizador.instancia.RestarSegundo();
 			if((i % 3) == 0){
-				mensaje.GetComponent<MensajeEmergente>().cambiarTexto("");
+				mensaje.GetComponent<MensajeEmergente>().CambiarTexto("");
 				Vector3 pos = new Vector3(Random.Range(-0.2f, 0.2f), 0.2f, 0.0f) + camara.position + (new Vector3(camara.forward.x, 0, camara.forward.z).normalized * Random.Range(0.5f, 0.8f));
 				Instantiate(frutas[Random.Range(0,3)], pos, Quaternion.identity);
 			}
 		}
+		// Termina el juego.
 		yield return new WaitForSeconds(1);
-		mensaje.GetComponent<MensajeEmergente>().cambiarTexto("Se acabó el tiempo!");
+		mensaje.GetComponent<MensajeEmergente>().CambiarTexto("Se acabó el tiempo!");
 		yield return new WaitForSeconds(3);
-		Temporizador.instancia.reiniciar();
-		Puntos.instancia.reiniciar();
+		Temporizador.instancia.Reiniciar();
+		SistemaPuntos.instancia.Reiniciar();
 		interfazMenu.SetActive(true); interfazJuego.SetActive(false);
 	}
 
     /**
-     * Cambia el estado del juego entre activo y no activo.
+     * Cambia el estado del juego.
      */
     public void Activar(){
 		if(activo){

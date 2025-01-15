@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Santi\\Jave\\Tesis\\Proyecto\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegolinea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|c:\\santi\\jave\\tesis\\proyecto\\assets\\scripts\\juegofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B240A8C-9A4F-2F25-B643-F3DEB7EEFA22}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\juegofruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "juegoFruta.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoFruta.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\juegoFruta.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoFruta.cs",
+              "RelativeToolTip": "Assets\\Scripts\\juegoFruta.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwEUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:00:17.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "juegoLinea.cs",
+              "DocumentMoniker": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoLinea.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\juegoLinea.cs",
+              "ToolTip": "C:\\Santi\\Jave\\Tesis\\Proyecto\\Assets\\Scripts\\juegoLinea.cs",
+              "RelativeToolTip": "Assets\\Scripts\\juegoLinea.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAwwGIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T23:49:46.285Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

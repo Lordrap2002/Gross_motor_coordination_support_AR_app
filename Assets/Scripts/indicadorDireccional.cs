@@ -7,6 +7,9 @@ namespace MixedReality.Toolkit.SpatialManipulation{
      * Clase que representa un indicador direccional para la manipulación espacial.
      * Esta clase se encarga de mostrar un indicador visual para guiar al usuario hacia un objetivo
      * cuando este no está en la vista del usuario.
+     *
+     * Se utilizó y modificó el código del Directional Indicator de MRTK para que el indicador
+     * no se mueva sobre el eje y (altura).
      */
     [AddComponentMenu("MRTK/Spatial Manipulation/Solvers/Directional Indicator")]
     public class DirectionalIndicator : Solver{

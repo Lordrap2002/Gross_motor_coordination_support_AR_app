@@ -21,7 +21,7 @@ public class MensajeEmergente : MonoBehaviour{
     /**
      * Cambia el texto del mensaje emergente.
      */
-    public void cambiarTexto(string mensaje){
+    public void CambiarTexto(string mensaje){
         texto.text = mensaje;
     }
 }

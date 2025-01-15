@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/escena0.unity
+    path: Assets/Scenes/escenaImitar.unity
     guid: 621df3f5fa56a0a4ab5d559110c88a1a
   - enabled: 1
-    path: Assets/Scenes/escena1.unity
-    guid: cfc13a2e01ba79645afde539b6614ba1
-  - enabled: 1
-    path: Assets/Scenes/escena2.unity
+    path: Assets/Scenes/escenaLinea.unity
     guid: 7651e9da4f61764498d9c9fe83a3b540
   - enabled: 1
+    path: Assets/Scenes/escenaFruta.unity
+    guid: cfc13a2e01ba79645afde539b6614ba1
+  - enabled: 0
     path: Assets/Scenes/escena3.unity
     guid: 9223c65b4ab427f458ab6f2802de2c2d
   m_configObjects:
